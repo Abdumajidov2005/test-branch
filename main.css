@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  overflow: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav .container {
+  padding: 30px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: green;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+}
+
+nav .links li {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(43, 43, 43);
+  position: relative;
+  transition: all 0.3s ease;
+  padding-bottom: 5px;
+}
+
+.links li:hover {
+  color: green;
+}
+
+.links li:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 3px;
+  background-color: green;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+
+.links li:hover::after {
+  width: 100%;
+}
+
+nav .nav_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav_btn button {
+  padding: 20px 40px;
+  background-color: green;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.hero {
+  background-image: url("./imgs/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.hero .hero_left {
+  width: 550px;
+  height: 400px;
+}
+
+.hero_left img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero .hero_right {
+  width: 550px;
+}
+
+.hero_right h1 {
+  font-size: 48px;
+  font-weight: 700;
+  color: green;
+}
+
+.hero_right p {
+  font-size: 16px;
+  font-weight: 400;
+  color: gray;
+  padding: 30px 0px;
+}
+
+.hero_right .hero_btns {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero_btns button {
+  padding: 20px 40px;
+  color: white;
+  background-color: green;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
